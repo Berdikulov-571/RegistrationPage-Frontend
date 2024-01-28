@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#06aa5e">
-    <meta name="msapplication-navbutton-color" content="#06aa5e">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Sign up | Basket ™</title>
-</head>
-
-<body>
+<div>
     <main class="card-container slideUp-animation">
         <div class="image-container">
             <h1 class="company">Basket <sup>&trade;</sup></h1>
@@ -22,16 +8,15 @@
                 <img src="./assets/images/dbl-arrow.png" alt="">
             </a>
         </div>
-        <form action="" method="">
+        <div action="" method="">
             <div class="form-container slideRight-animation">
-
                 <h1 class="form-header">
                     Get started
                 </h1>
 
                 <div class="input-container">
                     <label for="f-name"></label>
-                    <input type="text" name="f-name" id="f-name" required>
+                    <input type="text" class="firstName" name="f-name" id="f-name " required>
                     <span>
                         First name
                     </span>
@@ -40,7 +25,7 @@
 
                 <div class="input-container">
                     <label for="l-name"></label>
-                    <input type="text" name="l-name" id="l-name" required>
+                    <input type="text" name="l-name" class="lastName" id="l-name " required>
                     <span>
                         Last name
                     </span>
@@ -50,7 +35,7 @@
                 <div class="input-container">
                     <label for="mail">
                     </label>
-                    <input type="email" name="mail" id="mail" required>
+                    <input type="email" name="mail" class="email" id="mail " required>
                     <span>
                         E-mail
                     </span>
@@ -60,36 +45,38 @@
                 <div class="input-container">
                     <label for="phone">
                     </label>
-                    <input type="tel" name="phone" id="phone" required>
+                    <input type="tel" name="phone" class="phoneNumber" id="phone " required>
                     <span>Phone</span>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-container">
                     <label for="user-password"></label>
-                    <input type="password" name="user-password" id="user-password" class="user-password" required>
+                    <input type="password" name="user-password" id="user-password " class="user-password password"
+                        required>
                     <span>Password</span>
                     <div class="error"></div>
                 </div>
 
                 <div class="input-container">
                     <label for="user-password-confirm"></label>
-                    <input type="password" name="user-password-confirm" id="user-password-confirm"
-                        class="password-confirmation" required>
+                    <input type="password" name="user-password-confirm" id="user-password-confirm "
+                        class="password-confirmation retryPassword" required>
                     <span>
                         Confirm Password
                     </span>
                     <div class="error"></div>
                 </div>
 
+
                 <div id="btm">
-                    <button type="submit" class="submit-btn">Create Account</button>
+                    <button (click)="CreateUser()" type="submit" class="submit-btn">Create Account</button>
                     <p class="btm-text">
                         Already have an account..? <span class="btm-text-highlighted"> Log in</span>
                     </p>
                 </div>
             </div>
-        </form>
+        </div>
     </main>
     <section class="outro-overlay disabled slideUp-animation">
         <h1 class="company">Basket <sup>&trade;</sup></h1>
@@ -102,7 +89,7 @@
             <a href="https://www.github.com/0xabdulkhalid/basket-sign-up-form/">Source Code</a>
         </div>
     </section>
-</body>
+</div>
 <script>
     const submitBtn = document.querySelector('.submit-btn'),
         phone = document.querySelector('#phone'),
@@ -165,5 +152,3 @@
         }
     })
 </script>
-
-</html>
