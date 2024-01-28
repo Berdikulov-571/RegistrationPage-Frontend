@@ -1,5 +1,7 @@
 # RegistrationPage
 
+![image](https://github.com/Berdikulov-571/RegistrationPage-Frontend/assets/125897994/4da614d3-bc5c-4db1-b50f-72b6a7e886d9)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
 ## Development server
