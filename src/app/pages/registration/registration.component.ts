@@ -24,13 +24,6 @@ export class RegistrationComponent {
     let password = passwordInput.value;
     let retryPassword = retryPasswordInput.value;
 
-    console.log(firstName);
-    console.log(lastName);
-    console.log(email);
-    console.log(phoneNumber);
-    console.log(password);
-    console.log(retryPassword);
-
     let user: CreateUserCommand = {
       firstName: firstName,
       lastName: lastName,
